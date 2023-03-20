@@ -1,0 +1,1602 @@
+body {
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 29px;
+  background: #fff;
+  overflow: auto;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+.container {
+  width: 1280px;
+  margin: auto;
+}
+.header-bg {
+  background: #0f3cc9;
+  padding: 15px 0;
+  position: sticky;
+  width: 100%;
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo {
+  width: 40px;
+}
+.logo img {
+  width: 100%;
+}
+.menu ul {
+  display: flex;
+  align-items: center;
+}
+.menu li {
+  margin: 0 20px;
+  font-size: 18px;
+}
+.menu a {
+  color: #fff;
+}
+.menu li:hover a {
+  opacity: 0.6;
+  transition: all 0.5s ease;
+}
+.search {
+  width: 314px;
+  background: #0a2885;
+  border-radius: 30px;
+  padding: 10px 10px 10px 40px;
+  color: #fff;
+  border: none;
+  outline: none;
+  position: relative;
+}
+.search:hover {
+  background: #061951;
+  transition: all 0.5s ease;
+}
+.search::placeholder {
+  color: #fff;
+  font-size: 16px;
+}
+.search-image{
+  position: absolute;
+  top: 29px;
+  right: 410px;
+  width: 20px;
+}
+.search-image img{
+  width: 100%;
+}
+.menu li:nth-child(7) {
+  margin-right: 60px;
+}
+.menu li:nth-child(2) {
+  position: relative;
+}
+.new-tag {
+  position: absolute;
+  background: #e30513;
+  padding: 4px 8px;
+  font-size: 10px;
+  line-height: 10px;
+  color: #fff;
+  top: -20px;
+  border-radius: 30px;
+}
+.account{
+  position: relative;
+}
+.account img {
+  width: 30px;
+  vertical-align: middle;
+}
+.menu li:last-child:hover a{
+  opacity: 1;
+}
+/* popup */
+.login-popup{
+  background-image: url(../images/jio-digital.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 80%;
+  height: 500px;
+  padding: 50px 0 50px 100px;
+  position: fixed;
+  left: 10%;
+  top: 70px;
+  z-index: 9;
+  border-radius: 10px;
+  display: none;
+}
+.login-form{
+  text-align: center;
+  background: rgba(161, 161, 161, 0.7);
+border-radius: 10px;
+padding: 20px;
+width: 340px;
+height: 400px;
+color: #fff;
+font-size: 16px;
+}
+.login-form h3{
+  font-size: 30px;
+  color: #fff;
+}
+.login-form a{
+  font-size: 14px;
+}
+.email{
+  margin: 30px 0 20px;
+}
+.email, .password{
+  width: 300px;
+  padding: 10px;
+  border-radius: 30px;
+  border: 1px solid #fff;
+  outline: none;
+  background: transparent;
+  color: #fff;
+  font-size: 16px;
+}
+.password{
+  margin: 0 0 10px 0;
+}
+.email::placeholder, .password::placeholder{
+  font-size: 16px;
+  color: #eeeeee;
+}
+.login-form-btn:not(.login-form){
+  border-radius: 30px;
+  padding: 10px 20px;
+  color: #fff;
+  border: none;
+  font-size: 16px;
+  background: #000093;
+  width: 300px;
+  margin-top: 30px;
+  display: inline-block;
+  line-height: 20px;
+}
+.login-form-btn:hover{
+  opacity: 1;
+  background: #061951;
+}
+.sign-in:not(.login-form){
+  color: #000093;
+  font-size: 16px;
+  font-weight: 700;
+  margin-top: 40px;
+  display: inline-block;
+}
+.login-popup-overlay{
+  background: rgba(0, 0, 0, 0.9);
+  left: 0;
+  top: 0;
+  display: none;
+  position: fixed;
+  transition: opacity 0.5s ease-in-out;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+}
+.popup-close{
+  font-size: 30px;
+  color: #fff;
+  position: absolute;
+  top: -30px;
+  right: -30px;
+  cursor: pointer;
+}
+.login-form-wrap{
+  display: flex;
+  justify-content: space-between;
+}
+.popup-image{
+  width: 60%;
+}
+.popup-image img{
+  width: 100%;
+}
+.slider {
+  background-image: url(../images/slider.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 30px;
+  color: #fff;
+}
+.slider h1 {
+  font-size: 64px;
+  width: 40%;
+  line-height: 77px;
+}
+.slider p {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #c9c9c9;
+  padding: 20px 0 40px;
+  width: 45%;
+}
+.slider-btn {
+  color: #fff;
+  background: #0f3cc9;
+  padding: 14px 30px;
+  border-radius: 30px;
+  font-size: 18px;
+  font-weight: 700;
+  display: inline-block;
+}
+.slider-btn:hover {
+  opacity: 0.6;
+  transition: all 0.5s ease;
+}
+.slider-dot ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.slider-dot li {
+  background: #e7ebf8;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin: 20px 5px;
+  cursor: pointer;
+}
+.slider-dot li:nth-child(2) {
+  background: #0f3cc9;
+  border-radius: 30px;
+  width: 30px;
+  height: 10px;
+}
+.jio-service ul {
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+}
+.jio-service img {
+  margin: 20px;
+  height: 30px;
+}
+.jio-service li {
+  height: 120px;
+  width: 120px;
+  margin: 15px 0;
+  text-align: center;
+  position: relative;
+}
+.jio-service li:after {
+  content: "";
+  background: #e7ebf8;
+  border-radius: 50%;
+  transition: all 0.3s ease-in-out;
+  height: 70px;
+  width: 70px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  right: 0;
+  margin: auto;
+}
+.jio-service li:hover:after {
+  opacity: 1;
+  height: 120px;
+  width: 120px;
+  border-radius: 20px;
+  top: -10px;
+}
+.offer-bg {
+  background: #d9008d;
+  padding: 60px 0;
+  margin-top: 100px;
+}
+.offer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+.offer img {
+  width: 200px;
+  margin-bottom: 40px;
+}
+.offer-details h2 {
+  font-size: 50px;
+  color: #fff;
+  margin: 20px 0 0 0;
+}
+.offer-details p {
+  font-size: 20px;
+  color: #c9c9c9;
+  font-weight: 700;
+  margin: 20px 0;
+}
+.offer-details select {
+  border: none;
+  border-radius: 30px;
+  padding: 10px;
+  width: 200px;
+  color: #404040;
+  outline: none;
+}
+.offer-details option {
+  background: #e7ebf8;
+  color: #000;
+  overflow-y: scroll;
+  max-height: 100px;
+}
+.offer-places ul {
+  display: flex;
+  justify-content: center;
+}
+.offer-places li {
+  background: #fff;
+  padding: 8px 20px;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #7e2b61;
+  margin: 30px 20px 60px;
+}
+.offer-btn {
+  background: #0f3cc9;
+  padding: 15px 22px;
+  border-radius: 30px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  display: inline-block;
+  margin: auto;
+}
+.offer-btn:hover {
+  background: #0a2885;
+  transition: all 0.5s ease;
+}
+.ads-card ul {
+  display: flex;
+  margin-top: 100px;
+}
+.ads-card li {
+  background: #0078ad;
+  border-radius: 20px;
+  margin: 0 20px;
+  width: 33%;
+  color: #fff;
+}
+.ads-card img {
+  border-radius: 20px 20px 0 0;
+  width: 100%;
+}
+.ads-card h3 {
+  font-size: 36px;
+  line-height: 44px;
+  padding: 20px;
+}
+.ads-card li:nth-child(2) {
+  background: #1eccb0;
+  color: #08332c;
+}
+.ads-card li:last-child {
+  background: #00b259;
+  color: #002d16;
+}
+.ads-card a {
+  display: inline-block;
+  margin: 30px 20px;
+  background: #00b1ff;
+  border-radius: 30px;
+  padding: 12px 20px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+}
+.ads-card li:hover a {
+  background: #5cafd3;
+  transition: all 0.7s ease;
+}
+.ads-card li:nth-child(2) a {
+  background: #0a493f;
+}
+.ads-card li:nth-child(2):hover a {
+  background: #032922;
+}
+.ads-card li:last-child a {
+  background: #003b1d;
+}
+.ads-card li:last-child:hover a {
+  background: #007036;
+}
+.jio-games-bg {
+  background: #00b259;
+  margin-top: 40px;
+}
+.jio-games-logo {
+  width: 147px;
+  height: 40px;
+  background: #2d8659;
+  border-radius: 30px;
+  padding: 2px 4px;
+  position: relative;
+}
+.jio-games-logo img {
+  width: 36px;
+}
+.jio-games-logo h3 {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  color: #fff;
+  font-size: 20px;
+}
+.jio-games-detail {
+  width: 30%;
+  margin: 50px 0 50px 40px;
+}
+.jio-games-detail h2 {
+  margin: 30px 20px 0 0;
+  font-size: 50px;
+  line-height: 60px;
+  color: #002d16;
+}
+.jio-games-detail-btn {
+  background: #003b1d;
+  color: #fff;
+  padding: 13px 20px;
+  border-radius: 30px;
+  display: inline-block;
+  margin-top: 40px;
+  font-size: 18px;
+  font-weight: 700;
+}
+.jio-games-detail-btn:hover {
+  background: #007036;
+  transition: all 0.7s ease;
+}
+.jio-games {
+  display: flex;
+  justify-content: space-between;
+}
+.jio-games-video {
+  width: 69%;
+}
+.jio-games-video video {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.heading {
+  margin-top: 100px;
+  text-align: center;
+}
+.heading h2 {
+  font-size: 50px;
+}
+.heading p {
+  margin: 20px 30%;
+  font-size: 20px;
+  font-weight: 700;
+  color: #696969;
+}
+.our-apps ul {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.our-apps li {
+  background: #d9008d;
+  padding: 20px;
+  border-radius: 20px;
+  width: 32%;
+  color: #fff;
+}
+.our-apps-content {
+  display: flex;
+}
+.our-apps-content img {
+  width: 100px;
+  margin-left: 30px;
+}
+.our-apps-content h3 {
+  font-size: 30px;
+}
+.our-apps-content p {
+  font-size: 18px;
+  padding: 20px 0 30px 0;
+}
+.our-apps a {
+  color: #62003f;
+  background: #ff8bd6;
+  border-radius: 30px;
+  padding: 9px 20px;
+  font-size: 18px;
+  font-weight: 700;
+}
+.our-apps li:hover a {
+  background: #f73eb6;
+}
+.our-apps li:nth-child(2) {
+  background: #0078ad;
+}
+.our-apps li:nth-child(2) a {
+  background: #89a8ff;
+  color: #061951;
+}
+.our-apps li:nth-child(2):hover a {
+  background: #5c85f5;
+}
+.our-apps li:last-child {
+  background: #fa7d19;
+}
+.our-apps li:last-child a {
+  background: #d24212;
+  color: #fff;
+}
+.our-apps li:last-child:hover a {
+  background: #a1320d;
+}
+.more-apps {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+.more-apps-btn {
+  font-size: 18px;
+  font-weight: 700;
+  border: 1px solid #dddddd;
+  border-radius: 30px;
+  padding: 12px 20px;
+  color: #0f3cc9;
+}
+.more-apps-btn:hover {
+  border-color: #0f3cc9;
+}
+.discover-heading {
+  text-align: center;
+  margin-top: 100px;
+}
+.discover-heading h2 {
+  font-size: 50px;
+  line-height: 60px;
+  margin: 0 30%;
+}
+.discover-heading p {
+  font-size: 20px;
+  font-weight: 700;
+  color: #696969;
+  margin: 20px 18%;
+}
+.discover ul {
+  display: flex;
+  margin-top: 40px;
+}
+.discover li {
+  text-align: center;
+  width: 33.33%;
+}
+.discover img {
+  height: 100px;
+}
+.discover h3 {
+  font-size: 30px;
+  padding-top: 20px;
+}
+.discover p {
+  font-size: 18px;
+  color: #696969;
+  padding: 20px 20px 30px;
+}
+.discover-btn {
+  background: #0f3cc9;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  padding: 12px 20px;
+  border-radius: 30px;
+  display: inline-block;
+}
+.discover-btn:hover {
+  background: #0a2885;
+  transition: all 0.7s ease;
+}
+svg {
+  margin-top: 60px;
+}
+.spotlight {
+  box-shadow: 0px 4px 10px 5px rgba(0, 0, 0, 0.07);
+  border-radius: 30px;
+}
+.spotlight-details {
+  width: 50%;
+  padding: 80px 80px 80px 40px;
+}
+.spotlight-details h4 {
+  font-size: 40px;
+  line-height: 50px;
+}
+.spotlight-details p {
+  color: #696969;
+  font-size: 20px;
+  padding: 20px 0 30px;
+}
+.spotlight-details-btn {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  background: #0f3cc9;
+  border-radius: 30px;
+  padding: 12px 20px;
+  display: inline-block;
+}
+.spotlight-details-btn:hover {
+  background: #0a2885;
+  transition: all 0.7s ease;
+}
+.spotlight {
+  display: flex;
+  margin-top: 40px;
+}
+.spotlight img {
+  margin-left: 80px;
+  vertical-align: middle;
+}
+.devices-heading {
+  text-align: center;
+  margin-top: 100px;
+}
+.devices-heading h2 {
+  font-size: 50px;
+  margin: 0 30%;
+  line-height: 60px;
+}
+.devices-heading p {
+  font-size: 20px;
+  color: #696969;
+  margin: 20px 0 40px;
+}
+.latest-devices ul {
+  display: flex;
+}
+.latest-devices li {
+  cursor: pointer;
+  box-shadow: 0px 4px 10px 5px rgba(0, 0, 0, 0.07);
+  border-radius: 30px;
+  width: 33.33%;
+  padding: 20px;
+  margin: 0 20px;
+  position: relative;
+}
+.latest-devices img {
+  width: 100%;
+  margin-top: 40px;
+}
+.latest-devices h3 {
+  font-size: 20px;
+}
+.latest-devices p {
+  font-size: 16px;
+  color: #696969;
+}
+.device-offer {
+  position: absolute;
+  top: 20px;
+  background: #0c5273;
+  border-radius: 5px;
+  font-size: 12px;
+  padding: 6px 12px;
+  color: #fff;
+  display: inline-block;
+}
+.opportunities {
+  background: #0f3cc9;
+  color: #fff;
+  border-radius: 30px;
+  margin-top: 100px;
+  cursor: pointer;
+}
+.opportunities h2 {
+  font-size: 50px;
+  padding: 80px 43% 0 40px;
+  line-height: 60px;
+}
+.opportunities p {
+  color: #c9c9c9;
+  font-size: 20px;
+  font-weight: 700;
+  padding: 20px 0 30px 40px;
+}
+.opportunities-btn {
+  margin: 0 0 80px 40px;
+  background: #658dff;
+  border-radius: 30px;
+  padding: 12px 20px;
+  font-size: 18px;
+  font-weight: 700;
+  color: #fff;
+  display: inline-block;
+}
+.opportunities-btn:hover {
+  background: #0078ad;
+  transition: all ease 0.7s;
+}
+.opportunities img {
+  border-radius: 0 30px 30px 0;
+  height: 100%;
+  width: 100%;
+}
+.oppotunities-content {
+  display: flex;
+}
+.difference-bg {
+  background: #f5f5f5;
+  padding: 60px 0;
+  margin-top: 100px;
+}
+.difference-heading {
+  text-align: center;
+}
+.difference-heading h2 {
+  font-size: 50px;
+}
+.difference-heading p {
+  font-size: 20px;
+  color: #696969;
+  padding-top: 20px;
+}
+.difference-cards ul {
+  display: flex;
+}
+.difference-cards li {
+  background: #fff;
+  border-radius: 30px;
+  margin: 40px 20px 0;
+  width: 33.33%;
+  cursor: pointer;
+}
+.difference-cards h3 {
+  font-size: 20px;
+  padding: 20px 0 0 20px;
+}
+.difference-cards img {
+  width: 100%;
+  border-radius: 30px 30px 0 0;
+}
+.difference-cards p {
+  font-size: 16px;
+  color: #696969;
+  padding: 20px 18% 0 20px;
+}
+.difference-cards-btn {
+  font-size: 16px;
+  color: #000093;
+  margin: 30px 0 20px 20px;
+  display: inline-block;
+}
+.supercharge {
+  margin-top: 100px;
+  background-image: url(../images/Supercharge.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 60px 20px;
+  border-radius: 30px;
+  cursor: pointer;
+}
+.supercharge h5 {
+  font-size: 60px;
+  color: #fff;
+  line-height: 70px;
+  margin-right: 70%;
+}
+.supercharge p {
+  font-size: 20px;
+  color: #c9c9c9;
+  margin-right: 70%;
+  padding: 20px 0 60px;
+}
+.supercharge-btn {
+  background: #0f3cc9;
+  border-radius: 30px;
+  padding: 12px 20px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  display: inline-block;
+}
+.supercharge-btn:hover {
+  background: #000093;
+  transition: all ease 0.7s;
+}
+.myjio-bg {
+  background: #e8e8fc;
+  padding-top: 60px;
+  margin-top: 100px;
+}
+.myjio-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.myjio-logo img {
+  width: 60px;
+  vertical-align: middle;
+}
+.myjio-logo h3 {
+  font-size: 30px;
+  padding-left: 10px;
+}
+.myjio-heading {
+  text-align: center;
+}
+.myjio-heading h2 {
+  font-size: 50px;
+  line-height: 60px;
+  margin: 0 38%;
+}
+.myjio-heading p {
+  font-size: 20px;
+  color: #696969;
+  font-weight: 700;
+  padding: 20px 0 30px;
+}
+.help-bg {
+  margin-top: 60px;
+  background: #0f3cc9;
+  padding: 60px 0;
+}
+.help {
+  text-align: center;
+  color: #fff;
+}
+.help h2 {
+  font-size: 50px;
+}
+.help p {
+  font-size: 20px;
+  padding: 20px 0;
+}
+.help-btns ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.help-btns a {
+  border: 1px solid #becefb;
+  border-radius: 30px;
+  padding: 12px 20px;
+  margin: 30px 20px 0 0;
+  font-size: 18px;
+  font-weight: 700;
+  color: #becefb;
+  display: inline-block;
+}
+.help-btns li:hover a {
+  border-color: #fff;
+}
+/* Popup-two */
+.overlay{
+  background: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  display: none;
+}
+.search-hover{
+  z-index: 2;
+  background: #0f3cc9;
+  position: absolute;
+  height: 100px;
+  width: 100%;
+  top: 0;
+  left: 0;
+  display: none;
+}
+.input-two input {
+  padding: 10px 10px 10px 30px;
+  width: 35%;
+  border-radius: 30px;
+  border: none;
+  /* margin-right: 30px; */
+  background: #0a2885;
+  outline: none;
+  color: #fff;
+  font-size: 16px;
+}
+.input-two{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+  position: relative;
+  flex-direction: column;
+}
+.input-two img{
+  position: absolute;
+  left: 33%;
+  top: 10px;
+  width: 16px;
+}
+.round {
+  position: relative;
+}
+.input-two::placeholder{
+  font-size: 18px;
+  color: #fff;
+}
+.suggested{
+  border-bottom: 1px solid #d7d7d7;
+  padding-bottom: 10px;
+}
+.quick-links li{
+  margin-bottom: 17px;
+  border-bottom: 1px solid #d7d7d7;
+  color: #696969;
+  padding-bottom: 10px;
+}
+.quick-links li:nth-child(1){
+  border-bottom: 0;
+  font-size: 14px;
+}
+.quick-links {
+  display: none;
+  background: #fff;
+  width: 35%;
+  border-radius: 10px;
+  padding: 20px;
+  position: absolute;
+  top: 50px;
+  left: 33%;
+  max-height: 500px;
+  overflow-y: auto;
+}
+.suggested span{
+  display: block;
+  margin-bottom: 12px;
+  color: #7d7d7d;
+  font-size: 14px;
+}
+.recharge{
+  margin-top: 12px;
+  border-bottom: 1px solid #d7d7d7;
+  padding: 10px 0;
+}
+.quick-links a {
+  font-size: 14px;
+  color: #000;
+  font-weight: 700;
+}
+/*  */
+.footer-bg {
+  background: #f5f5f5;
+  padding: 60px 0;
+}
+footer h4 {
+  font-size: 20px;
+  padding-bottom: 20px;
+}
+footer a {
+  color: #696969;
+  font-size: 16px;
+}
+.footer {
+  display: flex;
+  justify-content: space-between;
+}
+.footer li {
+  padding: 5px 0;
+}
+.footer li:hover a {
+  color: #000093;
+}
+.footer-icons ul {
+  display: flex;
+}
+.footer-icons li {
+  margin: 0 10px 30px;
+}
+.footer-icons img {
+  width: 24px;
+}
+.footer-icons li:hover a {
+  opacity: 0.7;
+  transition: all 0.3s ease;
+}
+.download-app ul {
+  display: flex;
+}
+.download-app li {
+  margin: 0 10px;
+}
+.download-app li:first-child {
+  margin: 0;
+}
+.download-app img {
+  width: 100%;
+}
+.footer h3 {
+  font-size: 30px;
+  padding-bottom: 20px;
+}
+.menu-icon {
+  display: none;
+}
+.search-2 {
+  display: none;
+}
+.account-2 {
+  display: none;
+}
+.myjio-heading a{
+  display: none;
+}
+.mobile-menu{
+  display: none;
+}
+/* Responsive-Start */
+@media screen and (max-width: 667px) {
+  .container {
+    width: 100%;
+    padding: 0 20px;
+  }
+  .header-bg {
+    padding: 15px 0;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+  }
+  .header {
+    display: flex;
+    justify-content: space-between;
+  }
+  .menu {
+    display: none;
+  }
+  .mobile-menu .menu-icon{
+    display: none;
+  }
+  .menu-icon {
+    display: block;
+    position: relative;
+  }
+  .mobile-menu{
+    width: 100%;
+    max-width: 375px;
+    height: 100vh;
+    background: #fff;
+    position: fixed;
+    top:65px;
+    left: 0;
+    z-index: 9;
+    display: none;
+    overflow-y: auto;
+    max-width: 560px;
+    /* display: block; */
+  }
+  .mobile-menu > ul > li{
+    /* display: flex;
+    justify-content: space-between;
+    align-items: center; */
+    padding: 10px 0;
+    margin: 0 20px;
+    border-bottom: 1px solid #e7e7e7;
+  }
+  .mobile-menu li ul li a{
+    font-weight: 400;
+    border-bottom: none;
+    padding: 10px;
+  }
+  .new-tag{
+    position: unset;
+  }
+  .scroll-menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 16px;
+    color: #000;
+    font-weight: 700;
+  }
+  .scroll-drop-menu{
+    display: none;
+  }
+  .jiofiber-drop-menu{
+    display: none;
+  }
+  .business-drop-menu{
+    display: none;
+  }
+  .shop-drop-menu{
+    display: none;
+  }
+  .support-drop-menu{
+    display: none;
+  }
+  .mobile-menu a{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+    color: #000;
+    font-weight: 700;
+  }
+  .mobile-menu-icon{
+    background: rgba(231, 235, 248, 0);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+  .mobile-menu-icon img{
+    width: 20px;
+    margin: 15px;
+  }
+  .mobile-menu-icon:hover{
+    background: rgba(231, 235, 248, 1);
+  }
+  .menu-icon img {
+    width: 24px;
+    vertical-align: middle;
+  }
+  .logo {
+    width: 30px;
+  }
+  .logo img {
+    width: 100%;
+    vertical-align: middle;
+  }
+  .search-2 {
+    display: block;
+    width: 200px;
+    background: #0a2885;
+    border-radius: 30px;
+    padding: 10px;
+    color: #fff;
+    border: none;
+  }
+  .search-2:hover {
+    background: #061951;
+    transition: all 0.5s ease;
+  }
+  .search-2::placeholder {
+    color: #fff;
+  }
+  .account-2 {
+    display: block;
+  }
+  .account-2 img {
+    vertical-align: middle;
+    width: 30px;
+    vertical-align: middle;
+  }
+  .slider {
+    width: 100%;
+    padding: 120px 0 30px;
+  }
+  .slider h1 {
+    font-size: 36px;
+    width: auto;
+    line-height: 40px;
+  }
+  .slider p {
+    font-size: 16px;
+    width: auto;
+  }
+  .slider-btn {
+    font-size: 16px;
+    padding: 12px 26px;
+  }
+  .jio-service ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 40px;
+  }
+  .jio-service li {
+    width: 110px;
+    margin: 10px 0;
+  }
+  .offer-bg {
+    padding: 80px 0;
+    margin-top: 60px;
+  }
+  .offer img {
+    width: 130px;
+    margin-bottom: 0;
+  }
+  .offer-details h2 {
+    font-size: 26px;
+    margin: 10px 0 0 0;
+  }
+  .offer-details p {
+    font-size: 16px;
+    margin: 10px 0 20px;
+  }
+  .offer-details select {
+    padding: 15px;
+    width: 340px;
+    margin: 20px 0;
+    font-size: 16px;
+  }
+  .offer-places ul {
+    flex-wrap: wrap;
+  }
+  .offer-places li {
+    padding: 5px 10px;
+    color: #7e2b61;
+    margin: 10px 5px;
+  }
+  .offer-btn {
+    padding: 12px 20px;
+    font-size: 16px;
+    margin-top: 30px;
+  }
+  .ads-card ul {
+    white-space: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    flex-direction: row;
+    justify-content: initial;
+    align-items: inherit;
+    display: block;
+    margin-top: 60px;
+    padding-bottom: 20px;
+  }
+  .ads-card li {
+    width: 84%;
+    white-space: normal;
+    margin: 0 10px;
+    display: inline-block;
+    margin-left: 10px;
+  }
+  .ads-card li:first-child {
+    margin-left: 0;
+  }
+  .ads-card h3 {
+    font-size: 26px;
+    line-height: 36px;
+  }
+  .ads-card {
+    margin: 30px -20px 0 -20px;
+  }
+  .ads-card li:first-child {
+    margin-left: 20px;
+  }
+  .ads-card a {
+    padding: 5px 18px;
+    font-size: 16px;
+  }
+  .heading {
+    margin: 60px 0 0 20px;
+    text-align: left;
+  }
+  .heading h2{
+  font-size: 30px;
+  line-height: 40px;
+  margin-bottom: 20px;
+}
+.heading p {
+  margin: 0;
+  font-size: 16px;
+  line-height: 30px;
+}
+.jio-games{
+  flex-direction: column-reverse;
+  margin: 0 20px;
+}
+.jio-games-video{
+  width: 100%;
+  margin-top: 30px;
+}
+.jio-games video{
+  border-radius: 20px;
+}
+.jio-games-detail{
+  margin: 30px 0 0 0;
+  width: 100%;
+}
+.jio-games-detail h2{
+  font-size: 30px;
+  line-height: 40px;
+}
+.jio-games-bg {
+  margin-top: 30px;
+  padding: 30px 0;
+}
+.jio-games-detail-btn {
+  padding: 5px 18px;
+  margin-top: 40px;
+  font-size: 16px;
+}
+.our-apps ul {
+  margin-top: 20px;
+  white-space: nowrap;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  flex-direction: row;
+  justify-content: initial;
+  align-items: inherit;
+  display: block;
+  padding-bottom: 20px;
+}
+.our-apps li {
+  background: #d9008d;
+  padding: 20px;
+  border-radius: 20px;
+  width: 90%;
+  color: #fff;
+  margin: 0 20px 0 0;
+  display: inline-block;
+  white-space: normal;
+}
+.our-apps-content img {
+  margin-left: 10px;
+}
+.our-apps {
+  margin: 30px -20px 0 -20px;
+}
+.our-apps a {
+  padding: 5px 18px;
+  font-size: 16px;
+}
+.more-apps-btn {
+  font-size: 16px;
+  padding: 5px 18px;
+}
+.more-apps {
+  margin-top: 20px;
+}
+.discover-heading {
+  text-align: left;
+  margin-top: 60px 20px 0 0;
+}
+.discover-heading h2 {
+  font-size: 30px;
+  line-height: 40px;
+  margin: 0;
+}
+.discover-heading p {
+  font-size: 16px;
+  margin: 20px 44px 0 0;
+  padding: 0;
+}
+.discover ul{
+  flex-wrap: wrap;
+  margin: 0;
+}
+.discover li {
+  width: 100%;
+  margin-top: 60px;
+}
+.discover-btn {
+  font-size: 16px;
+  padding: 5px 18px;
+}
+.spotlight{
+  flex-direction: column-reverse;
+}
+.spotlight img {
+  width: 100%;
+  margin: 0;
+}
+.spotlight-details{
+  width: 100%;
+  padding: 20px;
+}
+.spotlight-details h4{
+  font-size: 30px;
+  line-height: 40px;
+}
+.spotlight-details p{
+  font-size: 16px;
+  padding: 10px 0 20px;
+}
+.spotlight-details-btn {
+  font-size: 16px;
+  padding: 5px 18px;
+}
+.devices-heading {
+  text-align: left;
+  margin-top: 60px;
+}
+.devices-heading h2 {
+  font-size: 30px;
+  margin: 0 20px;
+  line-height: 40px;
+}
+.devices-heading p{
+  margin: 10px 20px 20px;
+}
+.latest-devices ul {
+  display: flex;
+  white-space: nowrap;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  flex-direction: row;
+  justify-content: initial;
+  align-items: inherit;
+  display: block;
+  padding-bottom: 20px;
+}
+.latest-devices li{
+  border-radius: 20px;
+  width: 90%;
+  color: #fff;
+  margin: 0 20px;
+  display: inline-block;
+  white-space: normal;
+}
+.latest-devices {
+  margin: 30px -20px 0 -20px;
+}
+.opportunities {
+  margin-top: 60px;
+}
+.opportunities img {
+  border-radius: 30px 30px 0 0;
+  height: 100%;
+  width: 100%;
+}
+.oppotunities-content {
+  flex-direction: column-reverse;
+}
+.opportunities h2 {
+  font-size: 30px;
+  padding: 10px 20px;
+  line-height: 40px;
+}
+.opportunities p {
+  color: #c9c9c9;
+  font-size: 16px;
+  line-height: 30px;
+  padding: 20px 50px 30px 20px;
+}
+.opportunities-btn {
+    margin: 0 0 30px 20px;
+    padding: 5px 18px;
+    font-size: 16px;
+}
+.difference-heading {
+  text-align: left;
+}
+.difference-heading h2 {
+  font-size: 30px;
+}
+.difference-heading p {
+  font-size: 16px;
+  padding-top: 10px;
+}
+.difference-cards ul {
+  display: flex;
+  white-space: nowrap;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  flex-direction: row;
+  justify-content: initial;
+  align-items: inherit;
+  display: block;
+  padding-bottom: 20px;
+}
+.difference-cards li {
+  background: #fff;
+  border-radius: 30px;
+  margin: 20px 10px 0;
+  width: 82%;
+  cursor: pointer;
+  display: inline-block;
+  white-space: normal;
+}
+.difference-cards{
+  margin: 30px -20px 0 -20px;
+}
+.difference-cards li:first-child{
+  margin-left: 20px;
+}
+.supercharge{
+  margin-top: 60px;
+}
+.supercharge h5 {
+  font-size: 40px;
+  color: #fff;
+  line-height: 50px;
+  margin: 0;
+  margin-top: 60px;
+}
+.supercharge p {
+  font-size: 16px;
+  color: #c9c9c9;
+  padding: 20px 0 30px;
+  margin: 0;
+}
+.supercharge-btn {
+  padding: 5px 18px;
+  font-size: 16px;
+}
+.myjio-logo img {
+  width: 40px;
+}
+.myjio-logo h3 {
+  font-size: 20px;
+}
+.myjio-heading h2 {
+  font-size: 30px;
+  line-height: 40px;
+  margin: 0 10%;
+}
+.myjio-heading p {
+  font-size: 16px;
+  margin: 0 20px;
+}
+.myjio-heading img{
+  display: none;
+}
+.myjio-heading a{
+  display: inline-block;
+  background: #0f3cc9;
+  padding: 10px 18px;
+  border-radius: 30px;
+  margin: auto;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+}
+.help h2 {
+  font-size: 30px;
+}
+.help p {
+  font-size: 16px;
+  padding: 10px 0;
+}
+.help-btns ul {
+  flex-direction: column;
+}
+.help-btns a {
+  padding: 10px 0;
+  margin: 30px 0 0 0;
+  font-size: 16px;
+  display: inline-block;
+  text-align: center;
+  width: 330px;
+}
+.footer li{
+  padding: 10px 0;
+}
+.footer li:first-child{
+  margin: 0 5px 0 0;
+}
+.footer{
+  display: flex;
+  flex-direction: column;
+}
+.footer h4{
+  font-size: 20px;
+  /* font-weight: 400; */
+  border-bottom: 1px solid #ddd;
+  padding: 10px 0;
+}
+.footer-bg{
+  padding: 30px 0;
+}
+.footer h3 {
+  font-size: 22px;
+  padding-bottom: 10px;
+}
+.footer-icons li{
+  margin: 0 10px 10px;
+}
+}
