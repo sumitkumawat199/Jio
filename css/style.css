@@ -213,22 +213,23 @@ font-size: 16px;
   width: 100%;
 }
 .slider {
-  /* background-image: url(../images/slider.jpg); */
-  /* background-repeat: no-repeat; */
-  /* background-size: cover; */
-  /* padding: 30px; */
+  background-image: url(../images/slider.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 30px;
   color: #fff;
-  position: relative;
+  /* position: relative; */
+  /* z-index: 1; */
 }
 .slider img{
   width: 100%;
 }
-.slider-content{
+/* .slider-content{
   position: absolute;
   top: 15px;
   left: 40px;
   z-index: 4;
-}
+} */
 .slider-content h1 {
   font-size: 64px;
   width: 40%;

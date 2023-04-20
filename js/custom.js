@@ -33,15 +33,15 @@ $(document).ready(function () {
     $(".support-drop-menu").toggle("slide, down");
   });
   //slider
-  $(".slider").slick({
-    infinite: true,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 1500,
-    dots: true,
-    arrows: false,
-  });
+  // $(".slider").slick({
+  //   infinite: true,
+  //   slidesToShow: 1,
+  //   slidesToScroll: 1,
+  //   autoplay: true,
+  //   autoplaySpeed: 1500,
+  //   dots: true,
+  //   arrows: false,
+  // });
   $(".search").click(function () {
     $(".search-hover").fadeIn(500);
     $("body").addClass("hidden");
