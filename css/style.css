@@ -45,6 +45,7 @@ a {
 .menu li {
   margin: 0 20px;
   font-size: 18px;
+  position: relative;
 }
 .menu a {
   color: #fff;
@@ -61,7 +62,7 @@ a {
   color: #fff;
   border: none;
   outline: none;
-  position: relative;
+  /* position: relative; */
 }
 .search:hover {
   background: #061951;
@@ -73,8 +74,8 @@ a {
 }
 .search-image{
   position: absolute;
-  top: 29px;
-  right: 410px;
+  top: 8px;
+  left: 10px;
   width: 20px;
 }
 .search-image img{
@@ -212,18 +213,28 @@ font-size: 16px;
   width: 100%;
 }
 .slider {
-  background-image: url(../images/slider.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding: 30px;
+  /* background-image: url(../images/slider.jpg); */
+  /* background-repeat: no-repeat; */
+  /* background-size: cover; */
+  /* padding: 30px; */
   color: #fff;
+  position: relative;
 }
-.slider h1 {
+.slider img{
+  width: 100%;
+}
+.slider-content{
+  position: absolute;
+  top: 15px;
+  left: 40px;
+  z-index: 4;
+}
+.slider-content h1 {
   font-size: 64px;
   width: 40%;
   line-height: 77px;
 }
-.slider p {
+.slider-content p {
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
