@@ -230,12 +230,12 @@ font-size: 16px;
   left: 40px;
   z-index: 4;
 } */
-.slider-content h1 {
+.slider h1 {
   font-size: 64px;
   width: 40%;
   line-height: 77px;
 }
-.slider-content p {
+.slider p {
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
